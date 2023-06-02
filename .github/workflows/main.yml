@@ -8,6 +8,5 @@ jobs:
   build: 
     runs-on: self-hosted
     steps: 
-      - run: cd /home/andrey.bao/cat-text-generation-webui 
-      - run: git pull
-      - run: docker-compose up --build -d
+      - run: cd /home/andrey.bao/cat-text-generation-webui && git pull && docker-compose up --build -d
+      - run: echo "Deployed"
